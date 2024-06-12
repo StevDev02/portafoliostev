@@ -1,0 +1,50 @@
+---
+import ExperienceItem from "./ExperienceItem.astro"
+const EXPERIENCIE = [
+  {
+    date: "Marzo - Junio 2024",
+    title: "Desarrollador Web FrontEnd",
+    company: "Mexico",
+    description:
+      "Principal desarrollador web frontend para el diseño y desarrollo de la aplicación web de la empresa.",
+    link: "https://project-academy-elite.vercel.app/",
+  },
+  {
+    date: "Febrero - Marzo 2024",
+    title: "Desarrollador Web FrontEnd para pagina veterinaria",
+    company: "PetPaw",
+    description:
+      "Principal desarrollador frontend para el control de la gestión del diseño de la pagina de la empresa.",
+    link: "https://petpaw.framer.website/",
+    }, {
+    date: "Noviembre 2023 - Febrero 2024",
+    title: "Principal de Desarrollo Web FrontEnd",
+    company: "Sabata",
+    description:
+      "Principal desarrollador frontend en busca de mejoras en la experiencia del usuario.",
+    link: "https://petpaw.framer.website/",
+    }, {
+    date: "Marzo - Octubre 2023",
+    title: "Gestor de Base de Datos",
+    company: "Seguros Equinnocial",
+    description:
+      "Gestor de la base de datos de la aplicación web de la empresa.",
+    }, {
+    date: "Enero - Marzo 2023",
+    title: "Desarrollador Mobile",
+    company: "Chile",
+    description:
+      "Creacion de modulo para el desarrollo de aplicación móvil.",
+    },
+]
+---
+
+<ol class="relative mt-16">
+  {
+    EXPERIENCIE.map((experiencie) => (
+      <li class="">
+        <ExperienceItem {...experiencie} />
+      </li>
+    ))
+  }
+</ol>
